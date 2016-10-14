@@ -559,8 +559,14 @@
 		CGFloat imageWidth = sectionImage.size.width;
         sectionWidth = MAX(stringWidth, imageWidth);
 	}
-    
-    if (self.selectionStyle == HMSegmentedControlSelectionStyleArrow && self.segmentWidthStyle == HMSegmentedControlSegmentWidthStyleDynamic) {
+    if (self.selectionStyle == HMSegmentedControlSelectionStyleArrow) {
+        CGFloat widthToEndOfSelectedSegment = (self.segmentWidth * self.selectedSegmentIndex) + self.segmentWidth;
+        CGFloat widthToStartOfSelectedIndex = (self.segmentWidth * self.selectedSegmentIndex);
+        
+        CGFloat x = widthToStartOfSelectedIndex + ((widthToEndOfSelectedSegment - widthToStartOfSelectedIndex) / 2) - (self.selectionIndicatorHeight/2);
+        return CGRectMake(x - (self.selectionIndicatorHeight / 2), indicatorYOffset, self.selectionIndicatorHeight * 2, self.selectionIndicatorHeight);
+    }
+    else if (self.selectionStyle == HMSegmentedControlSelectionStyleArrow && self.segmentWidthStyle == HMSegmentedControlSegmentWidthStyleDynamic) {
         CGFloat selectedSegmentOffset = 0.0f;
         
         NSInteger i = 0;
