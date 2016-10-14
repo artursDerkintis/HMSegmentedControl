@@ -39,11 +39,10 @@
     segmentedControl1.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleWidth;
     segmentedControl1.frame = CGRectMake(0, 60, viewWidth, 40);
     segmentedControl1.segmentEdgeInset = UIEdgeInsetsMake(0, 10, 0, 10);
-    segmentedControl1.selectionStyle = HMSegmentedControlSelectionStyleFullWidthStripe;
+    segmentedControl1.selectionStyle = HMSegmentedControlSelectionStyleArrow;
+    segmentedControl1.segmentWidthStyle = HMSegmentedControlSegmentWidthStyleDynamic;
     segmentedControl1.selectionIndicatorLocation = HMSegmentedControlSelectionIndicatorLocationDown;
-    segmentedControl1.verticalDividerEnabled = YES;
-    segmentedControl1.verticalDividerColor = [UIColor blackColor];
-    segmentedControl1.verticalDividerWidth = 1.0f;
+    segmentedControl1.verticalDividerEnabled = NO;
     [segmentedControl1 setTitleFormatter:^NSAttributedString *(HMSegmentedControl *segmentedControl, NSString *title, NSUInteger index, BOOL selected) {
         NSAttributedString *attString = [[NSAttributedString alloc] initWithString:title attributes:@{NSForegroundColorAttributeName : [UIColor blueColor]}];
         return attString;

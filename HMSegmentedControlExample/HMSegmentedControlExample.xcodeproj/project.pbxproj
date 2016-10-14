@@ -201,6 +201,11 @@
 			attributes = {
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Hesham Abd-Elmegid";
+				TargetAttributes = {
+					54F05AD31689D34A0064FCE1 = {
+						DevelopmentTeam = F7N28ZQT97;
+					};
+				};
 			};
 			buildConfigurationList = 54F05ACE1689D34A0064FCE1 /* Build configuration list for PBXProject "HMSegmentedControlExample" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -326,8 +331,7 @@
 		54F05AF91689D34B0064FCE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = F7N28ZQT97;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HMSegmentedControlExample/HMSegmentedControlExample-Prefix.pch";
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
@@ -341,8 +345,7 @@
 		54F05AFA1689D34B0064FCE1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = F7N28ZQT97;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HMSegmentedControlExample/HMSegmentedControlExample-Prefix.pch";
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
