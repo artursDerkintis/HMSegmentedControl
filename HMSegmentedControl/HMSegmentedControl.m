@@ -559,7 +559,7 @@
 		CGFloat imageWidth = sectionImage.size.width;
         sectionWidth = MAX(stringWidth, imageWidth);
 	}
-    if (self.selectionStyle == HMSegmentedControlSelectionStyleArrow) {
+    if (self.selectionStyle == HMSegmentedControlSelectionStyleArrow&& self.segmentWidthStyle == HMSegmentedControlSegmentWidthStyleFixed) {
         CGFloat widthToEndOfSelectedSegment = (self.segmentWidth * self.selectedSegmentIndex) + self.segmentWidth;
         CGFloat widthToStartOfSelectedIndex = (self.segmentWidth * self.selectedSegmentIndex);
         
