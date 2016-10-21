@@ -49,6 +49,9 @@ typedef NS_ENUM(NSInteger, HMSegmentedControlType) {
 	HMSegmentedControlTypeTextImages
 };
 
+@interface HMScrollView : UIScrollView
+@end
+
 @interface HMSegmentedControl : UIControl
 
 @property (nonatomic, strong) HMScrollView *scrollView;
