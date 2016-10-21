@@ -51,6 +51,7 @@ typedef NS_ENUM(NSInteger, HMSegmentedControlType) {
 
 @interface HMSegmentedControl : UIControl
 
+@property (nonatomic, strong) HMScrollView *scrollView;
 @property (nonatomic, strong) NSArray *sectionTitles;
 @property (nonatomic, strong) NSArray *sectionImages;
 @property (nonatomic, strong) NSArray *sectionSelectedImages;
