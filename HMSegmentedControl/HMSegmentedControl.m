@@ -10,8 +10,6 @@
 #import <QuartzCore/QuartzCore.h>
 #import <math.h>
 
-@interface HMScrollView : UIScrollView
-@end
 
 @interface HMSegmentedControl ()
 
