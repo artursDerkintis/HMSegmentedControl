@@ -127,7 +127,7 @@
     self.scrollView.showsHorizontalScrollIndicator = NO;
     [self addSubview:self.scrollView];
     
-    _backgroundColor = [UIColor whiteColor];
+    _backgroundColor = [UIColor colorWithRed: 47.0 / 255.0 green: 41.0 / 255.0 blue: 52.0 / 255.0 alpha:1.0f];
     self.opaque = NO;
     _selectionIndicatorColor = [UIColor colorWithRed:52.0f/255.0f green:181.0f/255.0f blue:229.0f/255.0f alpha:1.0f];
     
