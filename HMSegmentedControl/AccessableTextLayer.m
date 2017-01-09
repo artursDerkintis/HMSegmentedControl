@@ -14,6 +14,7 @@
     self = [super init];
     if (self) {
         self.accessibilityElement = [[UIAccessibilityElement alloc] initWithAccessibilityContainer:self];
+        self.isAccessibilityElement = YES;
     }
     return self;
 }

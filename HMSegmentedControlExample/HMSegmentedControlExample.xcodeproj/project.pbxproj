@@ -34,7 +34,18 @@
 		54F05AF21689D34B0064FCE1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F05AF11689D34B0064FCE1 /* ViewController.m */; };
 		54F05B001689D38C0064FCE1 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F05AFF1689D38C0064FCE1 /* HMSegmentedControl.m */; };
 		E23A69E71E23E3E000C2B534 /* AccessableTextLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E23A69E61E23E3E000C2B534 /* AccessableTextLayer.m */; };
+		E274BE5E1E23F2EF00F8B626 /* HMSegmentedControlExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E274BE5D1E23F2EF00F8B626 /* HMSegmentedControlExampleUITests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E274BE601E23F2EF00F8B626 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54F05ACB1689D34A0064FCE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54F05AD31689D34A0064FCE1;
+			remoteInfo = HMSegmentedControlExample;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		542415F41AC99E050081610C /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
@@ -71,6 +82,9 @@
 		54F05AFF1689D38C0064FCE1 /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
 		E23A69E51E23E3E000C2B534 /* AccessableTextLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessableTextLayer.h; sourceTree = "<group>"; };
 		E23A69E61E23E3E000C2B534 /* AccessableTextLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccessableTextLayer.m; sourceTree = "<group>"; };
+		E274BE5B1E23F2EF00F8B626 /* HMSegmentedControlExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HMSegmentedControlExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E274BE5D1E23F2EF00F8B626 /* HMSegmentedControlExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControlExampleUITests.m; sourceTree = "<group>"; };
+		E274BE5F1E23F2EF00F8B626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +99,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E274BE581E23F2EF00F8B626 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -92,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				54F05ADE1689D34A0064FCE1 /* HMSegmentedControlExample */,
+				E274BE5C1E23F2EF00F8B626 /* HMSegmentedControlExampleUITests */,
 				54F05AD71689D34A0064FCE1 /* Frameworks */,
 				54F05AD51689D34A0064FCE1 /* Products */,
 			);
@@ -101,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				54F05AD41689D34A0064FCE1 /* HMSegmentedControlExample.app */,
+				E274BE5B1E23F2EF00F8B626 /* HMSegmentedControlExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -178,6 +201,15 @@
 			path = "发送页面按钮";
 			sourceTree = "<group>";
 		};
+		E274BE5C1E23F2EF00F8B626 /* HMSegmentedControlExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E274BE5D1E23F2EF00F8B626 /* HMSegmentedControlExampleUITests.m */,
+				E274BE5F1E23F2EF00F8B626 /* Info.plist */,
+			);
+			path = HMSegmentedControlExampleUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -198,6 +230,24 @@
 			productReference = 54F05AD41689D34A0064FCE1 /* HMSegmentedControlExample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E274BE5A1E23F2EF00F8B626 /* HMSegmentedControlExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E274BE641E23F2EF00F8B626 /* Build configuration list for PBXNativeTarget "HMSegmentedControlExampleUITests" */;
+			buildPhases = (
+				E274BE571E23F2EF00F8B626 /* Sources */,
+				E274BE581E23F2EF00F8B626 /* Frameworks */,
+				E274BE591E23F2EF00F8B626 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E274BE611E23F2EF00F8B626 /* PBXTargetDependency */,
+			);
+			name = HMSegmentedControlExampleUITests;
+			productName = HMSegmentedControlExampleUITests;
+			productReference = E274BE5B1E23F2EF00F8B626 /* HMSegmentedControlExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -209,6 +259,12 @@
 				TargetAttributes = {
 					54F05AD31689D34A0064FCE1 = {
 						DevelopmentTeam = F7N28ZQT97;
+					};
+					E274BE5A1E23F2EF00F8B626 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = F7N28ZQT97;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 54F05AD31689D34A0064FCE1;
 					};
 				};
 			};
@@ -225,6 +281,7 @@
 			projectRoot = "";
 			targets = (
 				54F05AD31689D34A0064FCE1 /* HMSegmentedControlExample */,
+				E274BE5A1E23F2EF00F8B626 /* HMSegmentedControlExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -255,6 +312,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E274BE591E23F2EF00F8B626 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -270,7 +334,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E274BE571E23F2EF00F8B626 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E274BE5E1E23F2EF00F8B626 /* HMSegmentedControlExampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E274BE611E23F2EF00F8B626 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54F05AD31689D34A0064FCE1 /* HMSegmentedControlExample */;
+			targetProxy = E274BE601E23F2EF00F8B626 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		54F05AE11689D34A0064FCE1 /* InfoPlist.strings */ = {
@@ -362,6 +442,77 @@
 			};
 			name = Release;
 		};
+		E274BE621E23F2EF00F8B626 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = F7N28ZQT97;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = HMSegmentedControlExampleUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.perspecs.HMSegmentedControlExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HMSegmentedControlExample;
+			};
+			name = Debug;
+		};
+		E274BE631E23F2EF00F8B626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = F7N28ZQT97;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = HMSegmentedControlExampleUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.perspecs.HMSegmentedControlExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HMSegmentedControlExample;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -382,6 +533,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		E274BE641E23F2EF00F8B626 /* Build configuration list for PBXNativeTarget "HMSegmentedControlExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E274BE621E23F2EF00F8B626 /* Debug */,
+				E274BE631E23F2EF00F8B626 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

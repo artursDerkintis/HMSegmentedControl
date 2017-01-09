@@ -247,7 +247,7 @@
         if (titleColor) {
             NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithDictionary:titleAttrs];
             
-            dict[NSForegroundColorAttributeName] = (id)titleColor.CGColor;
+            dict[NSForegroundColorAttributeName] = (id)titleColor;
             
             titleAttrs = [NSDictionary dictionaryWithDictionary:dict];
         }
@@ -313,18 +313,13 @@
             
             // Fix rect position/size to avoid blurry labels
             rect = CGRectMake(ceilf(rect.origin.x), ceilf(rect.origin.y), ceilf(rect.size.width), ceilf(rect.size.height));
-            
-            AccessableTextLayer *titleLayer = [AccessableTextLayer layer];
-            titleLayer.frame = rect;
-            titleLayer.alignmentMode = kCAAlignmentCenter;
-            if ([UIDevice currentDevice].systemVersion.floatValue < 10.0 ) {
-                titleLayer.truncationMode = kCATruncationEnd;
-            }
-            titleLayer.string = [self attributedTitleAtIndex:idx];
-            titleLayer.contentsScale = [[UIScreen mainScreen] scale];
-            
-            titleLayer.accessibilityElement.accessibilityLabel = [NSString stringWithFormat:@"segment %@", [[self attributedTitleAtIndex:idx] string]];
-            [self.scrollView.layer addSublayer:titleLayer];
+            UILabel *titleLabel = [[UILabel alloc] init];
+            titleLabel.frame = rect;
+            titleLabel.textAlignment = NSTextAlignmentCenter;
+            titleLabel.attributedText = [self attributedTitleAtIndex:idx];
+            titleLabel.layer.contentsScale = [[UIScreen mainScreen] scale];
+            titleLabel.accessibilityLabel = [NSString stringWithFormat:@"segment %@", [[self attributedTitleAtIndex:idx] string]];
+            [self.scrollView addSubview:titleLabel];
             
             // Vertical Divider
             if (self.isVerticalDividerEnabled && idx > 0) {
@@ -885,7 +880,7 @@
 
 - (NSDictionary *)resultingTitleTextAttributes {
     NSDictionary *defaults = @{
-        NSFontAttributeName : [UIFont systemFontOfSize:19.0f],
+        NSFontAttributeName : [UIFont systemFontOfSize:15.0f],
         NSForegroundColorAttributeName : [UIColor blackColor],
     };
     
