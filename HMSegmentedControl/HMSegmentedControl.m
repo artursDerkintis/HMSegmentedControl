@@ -320,10 +320,10 @@
             if ([UIDevice currentDevice].systemVersion.floatValue < 10.0 ) {
                 titleLayer.truncationMode = kCATruncationEnd;
             }
-            titleLayer.accessibilityElement.accessibilityLabel = [NSString stringWithFormat:@"segment %lu", (unsigned long)idx];
             titleLayer.string = [self attributedTitleAtIndex:idx];
             titleLayer.contentsScale = [[UIScreen mainScreen] scale];
             
+            titleLayer.accessibilityElement.accessibilityLabel = [NSString stringWithFormat:@"segment %@", [[self attributedTitleAtIndex:idx] string]];
             [self.scrollView.layer addSublayer:titleLayer];
             
             // Vertical Divider
@@ -423,7 +423,9 @@
                 titleLayer.truncationMode = kCATruncationEnd;
                 
             }
-            titleLayer.accessibilityElement.accessibilityLabel = [NSString stringWithFormat:@"segment %lu", (unsigned long)idx];
+            
+            titleLayer.accessibilityElement.accessibilityLabel = [NSString stringWithFormat:@"segment %@", [[self attributedTitleAtIndex:idx] string]];
+            
             CALayer *imageLayer = [CALayer layer];
             imageLayer.frame = imageRect;
 			
