@@ -8,6 +8,7 @@
 
 #import "HMSegmentedControl.h"
 #import <QuartzCore/QuartzCore.h>
+#import "AccessableTextLayer.h"
 #import <math.h>
 
 
@@ -313,12 +314,13 @@
             // Fix rect position/size to avoid blurry labels
             rect = CGRectMake(ceilf(rect.origin.x), ceilf(rect.origin.y), ceilf(rect.size.width), ceilf(rect.size.height));
             
-            CATextLayer *titleLayer = [CATextLayer layer];
+            AccessableTextLayer *titleLayer = [AccessableTextLayer layer];
             titleLayer.frame = rect;
             titleLayer.alignmentMode = kCAAlignmentCenter;
             if ([UIDevice currentDevice].systemVersion.floatValue < 10.0 ) {
                 titleLayer.truncationMode = kCATruncationEnd;
             }
+            titleLayer.accessibilityElement.accessibilityLabel = [NSString stringWithFormat:@"segment %lu", (unsigned long)idx];
             titleLayer.string = [self attributedTitleAtIndex:idx];
             titleLayer.contentsScale = [[UIScreen mainScreen] scale];
             
@@ -413,13 +415,15 @@
             // Fix rect position/size to avoid blurry labels
             textRect = CGRectMake(ceilf(textRect.origin.x), ceilf(textRect.origin.y), ceilf(textRect.size.width), ceilf(textRect.size.height));
 
-            CATextLayer *titleLayer = [CATextLayer layer];
+            AccessableTextLayer *titleLayer = [AccessableTextLayer layer];
             titleLayer.frame = textRect;
             titleLayer.alignmentMode = kCAAlignmentCenter;
             titleLayer.string = [self attributedTitleAtIndex:idx];
             if ([UIDevice currentDevice].systemVersion.floatValue < 10.0 ) {
                 titleLayer.truncationMode = kCATruncationEnd;
+                
             }
+            titleLayer.accessibilityElement.accessibilityLabel = [NSString stringWithFormat:@"segment %lu", (unsigned long)idx];
             CALayer *imageLayer = [CALayer layer];
             imageLayer.frame = imageRect;
 			

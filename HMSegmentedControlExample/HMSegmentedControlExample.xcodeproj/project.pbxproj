@@ -33,6 +33,7 @@
 		54F05AE91689D34A0064FCE1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F05AE81689D34A0064FCE1 /* AppDelegate.m */; };
 		54F05AF21689D34B0064FCE1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F05AF11689D34B0064FCE1 /* ViewController.m */; };
 		54F05B001689D38C0064FCE1 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F05AFF1689D38C0064FCE1 /* HMSegmentedControl.m */; };
+		E23A69E71E23E3E000C2B534 /* AccessableTextLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E23A69E61E23E3E000C2B534 /* AccessableTextLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,8 @@
 		54F05AFB1689D3650064FCE1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		54F05AFE1689D38C0064FCE1 /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = HMSegmentedControl.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		54F05AFF1689D38C0064FCE1 /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
+		E23A69E51E23E3E000C2B534 /* AccessableTextLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessableTextLayer.h; sourceTree = "<group>"; };
+		E23A69E61E23E3E000C2B534 /* AccessableTextLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccessableTextLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +147,8 @@
 			children = (
 				54F05AFE1689D38C0064FCE1 /* HMSegmentedControl.h */,
 				54F05AFF1689D38C0064FCE1 /* HMSegmentedControl.m */,
+				E23A69E51E23E3E000C2B534 /* AccessableTextLayer.h */,
+				E23A69E61E23E3E000C2B534 /* AccessableTextLayer.m */,
 			);
 			name = HMSegmentedControl;
 			path = ../../HMSegmentedControl;
@@ -261,6 +266,7 @@
 				54F05AE91689D34A0064FCE1 /* AppDelegate.m in Sources */,
 				54F05AF21689D34B0064FCE1 /* ViewController.m in Sources */,
 				54F05B001689D38C0064FCE1 /* HMSegmentedControl.m in Sources */,
+				E23A69E71E23E3E000C2B534 /* AccessableTextLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
