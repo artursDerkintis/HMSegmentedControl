@@ -14,12 +14,12 @@
 
 @interface HMSegmentedControl ()
 
+@property (nonatomic, readwrite, strong) HMScrollView *scrollView;
 @property (nonatomic, strong) CALayer *selectionIndicatorStripLayer;
 @property (nonatomic, strong) CALayer *selectionIndicatorBoxLayer;
 @property (nonatomic, strong) CALayer *selectionIndicatorArrowLayer;
 @property (nonatomic, readwrite) CGFloat segmentWidth;
 @property (nonatomic, readwrite) NSArray<NSNumber *> *segmentWidthsArray;
-@property (nonatomic, strong) HMScrollView *scrollView;
 
 @end
 

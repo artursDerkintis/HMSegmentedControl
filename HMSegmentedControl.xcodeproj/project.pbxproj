@@ -32,6 +32,8 @@
 		9C16333B1DA573C5001FB468 /* HMSegmentedControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1632D81DA57134001FB468 /* HMSegmentedControl.framework */; };
 		9C16333C1DA573C5001FB468 /* HMSegmentedControl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1632D81DA57134001FB468 /* HMSegmentedControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9C1633421DA574EB001FB468 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1633411DA574EB001FB468 /* main.m */; };
+		E213CA1F1F6738A700586151 /* AccessableTextLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = E213CA1D1F6738A700586151 /* AccessableTextLayer.h */; };
+		E213CA201F6738A700586151 /* AccessableTextLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E213CA1E1F6738A700586151 /* AccessableTextLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,8 @@
 		9C1633221DA57320001FB468 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9C1633231DA57320001FB468 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9C1633411DA574EB001FB468 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E213CA1D1F6738A700586151 /* AccessableTextLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessableTextLayer.h; sourceTree = "<group>"; };
+		E213CA1E1F6738A700586151 /* AccessableTextLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccessableTextLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,8 @@
 		9C1632E91DA57220001FB468 /* HMSegmentedControl */ = {
 			isa = PBXGroup;
 			children = (
+				E213CA1D1F6738A700586151 /* AccessableTextLayer.h */,
+				E213CA1E1F6738A700586151 /* AccessableTextLayer.m */,
 				9C1632EA1DA57220001FB468 /* HMSegmentedControl.h */,
 				9C1632EB1DA57220001FB468 /* HMSegmentedControl.m */,
 			);
@@ -203,6 +209,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E213CA1F1F6738A700586151 /* AccessableTextLayer.h in Headers */,
 				9C1632EC1DA57220001FB468 /* HMSegmentedControl.h in Headers */,
 				9C1632E71DA57214001FB468 /* HMSegmentedControl-umbrella.h in Headers */,
 			);
@@ -327,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E213CA201F6738A700586151 /* AccessableTextLayer.m in Sources */,
 				9C1632ED1DA57220001FB468 /* HMSegmentedControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
